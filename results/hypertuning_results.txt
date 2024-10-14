@@ -1,0 +1,2 @@
+Best Hyperparameters: {'bootstrap': False, 'max_depth': 48, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 11, 'n_estimators': 197}
+Test RMSE: 6.276603627418418
