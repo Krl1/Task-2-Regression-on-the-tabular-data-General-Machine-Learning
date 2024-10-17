@@ -16,7 +16,7 @@ This project focuses on performing regression analysis on tabular data using ran
 │   ├── hypertuning_results.txt
 │   ├── imputer_model.pkl
 │   ├── predictions.csv
-│   └── random_forest_model.pkl
+│   └── random_forest_model.pkl (saved on LFS)
 ├── src/
 │   ├── hypertune.py
 │   ├── predict.py
@@ -28,8 +28,8 @@ This project focuses on performing regression analysis on tabular data using ran
 
 ## Getting Started
 ### Prerequisites
-- Python 3.8
-- Required libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, scipy
+- Python 3.8 or higher
+- Required libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `scipy`
 
 ### Installation
 1. Clone the repository:

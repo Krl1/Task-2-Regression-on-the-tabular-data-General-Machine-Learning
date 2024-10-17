@@ -1,12 +1,13 @@
 import argparse
+from typing import Any
 
 import numpy as np
 from sklearn.metrics import mean_squared_error
 
 
-def root_mean_squared_error(y_true, y_pred):
+def root_mean_squared_error(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     """
-    Calculate root mean squared error (RMSE).
+    Calculate the root mean squared error (RMSE).
 
     Parameters:
     - y_true: array-like of shape (n_samples,) - Ground truth target values.
@@ -18,8 +19,13 @@ def root_mean_squared_error(y_true, y_pred):
     return np.sqrt(mean_squared_error(y_true, y_pred))
 
 
-# Argument parser for paths
-def parse_args():
+def parse_args() -> argparse.Namespace:
+    """
+    Parse command-line arguments.
+
+    Returns:
+    - args: Namespace - Parsed arguments from the command line.
+    """
     parser = argparse.ArgumentParser(description="Train a RandomForest model")
     parser.add_argument(
         "--train_data_path",
